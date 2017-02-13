@@ -3,6 +3,7 @@ import color from '../../styles/color';
 
 export default StyleSheet.create({
     container: {
+        elevation: 4,
         backgroundColor: color.primary,
         paddingTop: 0,
         top: 0,
@@ -12,11 +13,10 @@ export default StyleSheet.create({
         position: 'absolute'
     },
     titleContainer: {
-        marginTop: 10,
-        position: 'absolute',
-        top: 5,
-        left: 0,
-        right: 0
+        flex: 1,
+        margin: 16,
+        justifyContent: 'flex-start',
+        alignItems: 'center'
     },
     title: {
         textAlign: 'left',

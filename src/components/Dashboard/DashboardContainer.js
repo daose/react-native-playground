@@ -7,9 +7,13 @@ import { connect } from 'react-redux';
 import DashboardComponent from './DashboardComponent';
 
 class DashboardContainer extends Component {
+    shouldComponentUpdate(nextProps){
+        return false;
+    }
+
     render() {
         return (
-            <DashboardComponent />
+            <DashboardComponent title={this.props.navigationState.title}/>
         );
     }
 }

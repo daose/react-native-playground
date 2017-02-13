@@ -8,10 +8,11 @@ import NavBar from './components/NavBar';
 import TabBar from './components/TabBar';
 import TabIcon from './components/TabIcon';
 import color from './styles/color';
+import view from './styles/view';
 
 const scenes = Actions.create(
     <Scene key='ROOT'>
-        <Scene key='TABS' tabs={true}>
+        <Scene key='TABS' tabs={true} tabBarStyle={view.tabs} pressOpacity={1}>
             <Scene key='D1' component={Dashboard} navBar={NavBar} title='Dash One' icon={TabIcon} initial={true}/>
             <Scene key='D2' component={Dashboard} navBar={NavBar} title='Dash Two' icon={TabIcon}/>
             <Scene key='D3' component={Dashboard} navBar={NavBar} title='Dash Three' icon={TabIcon}/>
